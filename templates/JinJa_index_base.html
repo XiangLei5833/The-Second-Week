@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% from 'JinJa_index_macro.html' import course_item %}
+
+{% block header %}
+    <h1> header </h1>
+{% endblock %}
+
+{% block content %}
+    {{ course_item(course)}}
+{% endblock %}
