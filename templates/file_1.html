@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <h1> header </h1>
+{% endblock %}
+           
+{% block content %}
+    {% if filename == "helloshiyanlou" %}
+        <p> title: {{file_content.title1}} </p>
+        <p> created_time: {{file_content.created_time1}} </p>
+        <p> content: {{file_content.content1}} </p>
+    {% elif filename == "helloworld" %}
+        <p> title: {{file_content.title2}} </p>
+        <p> created_time: {{file_content.created_time2}} </p>
+        <p> content: {{file_content.content2}} </p>
+    {% endif %}
+{% endblock %}
