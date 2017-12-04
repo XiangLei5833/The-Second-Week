@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block header %}{% endblock %}
+
+{% block content %}
+    {% for news in titles %}
+        <a href = "{{url_for('file', file_id = news.id)}}"><p> {{news.title}} </p></a>
+        {{news.tags}}
+    {% endfor %}
+{% endblock %}
